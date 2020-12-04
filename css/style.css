@@ -1,0 +1,26 @@
+:root {
+    /*--------COLORS---------*/
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --color-white: #FFFFFF;
+   /* -------Fonts--------*/
+    --font-realway:'Raleway', sans-serif; /*Raleway [300, 400, 700, 800]*/
+    --font-spen-sans:'Open Sans', sans-serif; /*Open Sans [300, 400, 700]*/
+    /*-------Font-weight*/
+    --font-size-small: 300;
+    --font-size-nowmal: 400;
+    --font-size-bold: 700;
+    --font-size-big-bold: 800;
+    /*######################*/
+    /*------CONTENT-SIZE______*/
+    --contetn-size: 1352px;
+    /*--------------------------------*/
+    /*standardowe zaokrąglenia odstępy itp.*/
+    /*---------------------------------*/
+    --border-box: border-box;
+}
