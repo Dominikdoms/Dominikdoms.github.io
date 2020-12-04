@@ -96,13 +96,40 @@ a:active, a:hover {
     color: var(--color-black);
 }
 
+/*-------------------------*/
+/*-----OPEN SECTION-------*/
+/*------------------------*/
 
+.open {
 
+}
 
+.open__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
 
+.open__header {
+    font-family: 'Raleway';
+    font-size: 49px;
+    margin-bottom: 20px;
+}
 
+.open__text {
+    font-family: var(--font-spen-sans);
+    margin-bottom: 38px;
+}
 
-
+.open__btn {
+    border-radius: 30px;
+    background-color: var(--color-primary);
+    padding: 22px 157px;
+    text-decoration: none;
+    font-family: var(--font-spen-sans);
+    color: var(--color-white);
+}
 
 
 
