@@ -353,8 +353,83 @@ a:active, a:hover {
     transform: rotate(45deg);
 }
 
+/*------------------------------*/
+/*----------BENEFITS-SECOND-----*/
+/*------------------------------*/
 
+.benefits__second {
+    width: 100%;
+    height: 370px;
+    display: flex;
+    background-color: var(--color-white);
+    justify-content: space-between;
+    margin-top: 37px;
+    flex-direction: row-reverse;
+}
 
+.benefits__second-title {
+    font-family: var(--font-realway);
+    font-size: 36px;
+    color: var(--color-black);
+    margin-bottom: 30px;
+    width: 246px;
+}
+
+.benefits__second-text {
+    width: 416px;
+    height: 188px;
+    margin: 91px 20px;
+}
+
+.benefits__second-text::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-redish);
+    margin-top: 50px;
+    display: block;
+}
+
+.benefits__second-description {
+    font-family: var(--font-spen-sans);
+    font-size: 16px;
+    color: var(--color-black);
+    width: 416px;
+}
+
+.benefits__second-iphone {
+    width: 426px;
+    height: 328px;
+    margin: 29px 0 13px 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefits__second-iphone-img {
+    height: 328px;
+    width: 426px;
+}
+
+.benefits__second-text::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-primary);
+    margin-top: 50px;
+    display: block;
+}
+
+.benefits__second-square {
+    width: 320px;
+    height: 320px;
+    background-color: var(--color-primary);
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    right: 103px;
+    top: -19px;
+    z-index: -1;
+}
 
 
 
