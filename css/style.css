@@ -130,7 +130,142 @@ a:active, a:hover {
     font-family: var(--font-spen-sans);
     color: var(--color-white);
 }
+/*-------------------------*/
+/*-----STATISTIC-----------*/
+/*-------------------------*/
+.statistic {
+    margin-bottom: 121px;
+}
+
+.statistic__header {
+    font-size: 36px;
+    font-family: var(--font-realway);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: var(--color-black);
+}
+
+.statistic__content {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.statistic__icon__margin {
+    margin: 0 180px;
+}
+
+.statistic__header__small {
+    font-size: 20px;
+    font-family: var(--font-realway);
+    font-weight: var(--font-size-bold);
+    letter-spacing: 5.96px;
+    margin-top: 14.18px;
+}
+/*-------------------------------*/
+.statistic__text__person {
+    font-size: 17px;
+    font-family: var(--font-realway);
+    color: var(--color-grey);
+    margin-top: 19.11px;
+    position: relative;
+    left: -6px;
+}
+.statistic__text__eye {
+    font-size: 17px;
+    font-family: var(--font-realway);
+    color: var(--color-grey);
+    margin-top: 19.11px;
+    width: 120px;
+    text-align: center;
+    position: relative;
+    left: -3px;
+}
+.statistic__text__catalog {
+    font-size: 17px;
+    font-family: var(--font-realway);
+    color: var(--color-grey);
+    margin-top: 19.11px;
+    width: 131px;
+    text-align: center;
+}
+
+/*-------------------------*/
+.statistic__person {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistic__person__img {
+    position: relative;
+    left: 14px;
+}
 
 
+.statistic__eye {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.statistic__eye__img {
+    position: relative;
+    left: 14px;
+}
+
+
+.statistic__catalog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistic__catalog__img {
+    position: relative;
+    left: 21px;
+}
+/*---------------------------*/
+
+.statistic__circle__red {
+    border-radius: 50%;
+    background-color: var(--color-redish);
+    width: 63px;
+    height: 63px;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    left: 22px;
+    top: -5px;
+}
+
+.statistic__circle__blue {
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    width: 63px;
+    height: 63px;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    left: 31px;
+    top: -13px;
+}
+.statistic__circle__green {
+    border-radius: 50%;
+    background-color: var(--color-green);
+    width: 63px;
+    height: 63px;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    left: 30px;
+    top: -7px;
+}
+/*------------------------------*/
+/*----------BENEFITS------------*/
+/*------------------------------*/
