@@ -129,6 +129,7 @@ a:active, a:hover {
     text-decoration: none;
     font-family: var(--font-spen-sans);
     color: var(--color-white);
+    box-shadow: 0 0 22px 10px rgba(8,166,228,0.16);
 }
 
 .background-img {
