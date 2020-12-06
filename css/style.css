@@ -8,9 +8,9 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
-   /* -------Fonts--------*/
-    --font-realway:'Raleway', sans-serif; /*Raleway [300, 400, 700, 800]*/
-    --font-spen-sans:'Open Sans', sans-serif; /*Open Sans [300, 400, 700]*/
+    /* -------Fonts--------*/
+    --font-realway: 'Raleway', sans-serif; /*Raleway [300, 400, 700, 800]*/
+    --font-spen-sans: 'Open Sans', sans-serif; /*Open Sans [300, 400, 700]*/
     /*-------Font-weight*/
     --font-size-small: 300;
     --font-size-nowmal: 400;
@@ -61,7 +61,7 @@ body {
     color: var(--color-primary);
     text-decoration: none;
     font-size: 32px;
-    font-family:var(--font-realway);
+    font-family: var(--font-realway);
     font-weight: var(--font-size-small);
     outline: 0;
 }
@@ -129,7 +129,7 @@ a:active, a:hover {
     text-decoration: none;
     font-family: var(--font-spen-sans);
     color: var(--color-white);
-    box-shadow: 0 0 22px 10px rgba(8,166,228,0.16);
+    box-shadow: 0 0 22px 10px rgba(8, 166, 228, 0.16);
 }
 
 .background-img {
@@ -170,6 +170,7 @@ a:active, a:hover {
     letter-spacing: 5.96px;
     margin-top: 14.18px;
 }
+
 /*-------------------------------*/
 .statistic__text__person {
     font-size: 17px;
@@ -179,6 +180,7 @@ a:active, a:hover {
     position: relative;
     left: -6px;
 }
+
 .statistic__text__eye {
     font-size: 17px;
     font-family: var(--font-realway);
@@ -189,6 +191,7 @@ a:active, a:hover {
     position: relative;
     left: -3px;
 }
+
 .statistic__text__catalog {
     font-size: 17px;
     font-family: var(--font-realway);
@@ -237,6 +240,7 @@ a:active, a:hover {
     position: relative;
     left: 21px;
 }
+
 /*---------------------------*/
 
 .statistic__circle__red {
@@ -262,6 +266,7 @@ a:active, a:hover {
     left: 31px;
     top: -13px;
 }
+
 .statistic__circle__green {
     border-radius: 50%;
     background-color: var(--color-green);
@@ -273,6 +278,7 @@ a:active, a:hover {
     left: 30px;
     top: -7px;
 }
+
 /*------------------------------*/
 /*----------BENEFITS------------*/
 /*------------------------------*/
@@ -283,11 +289,13 @@ a:active, a:hover {
     background-color: var(--color-light-grey);
     padding: 106px 0;
 }
+
 .benefits__content {
     width: 1124px;
     margin: 0 auto;
     height: 1184px;
 }
+
 /*-----------------*/
 .benefits__first {
     width: 100%;
@@ -478,6 +486,7 @@ a:active, a:hover {
     margin-top: 46px;
     display: block;
 }
+
 .benefits__third-description {
     font-family: var(--font-spen-sans);
     font-size: 16px;
@@ -501,7 +510,6 @@ a:active, a:hover {
     left: 80px;
     bottom: -97px;
 }
-
 
 
 .benefits__third-square {
@@ -529,7 +537,7 @@ a:active, a:hover {
 .pricing__limited {
     margin-bottom: 41px;
     font-family: var(--font-realway);
-    color: rgba(19,37,59,1);
+    color: rgba(19, 37, 59, 1);
     font-size: 12px;
     font-weight: var(--font-size-bold);
 }
@@ -566,7 +574,7 @@ a:active, a:hover {
     font-family: var(--font-realway);
     font-size: 20px;
     font-weight: var(--font-size-bold);
-    color: rgba(19,37,59,1);
+    color: rgba(19, 37, 59, 1);
     margin: 34px 0 14px 0;
 }
 
@@ -728,6 +736,7 @@ a:active, a:hover {
     position: relative;
     left: 8px;
 }
+
 .details__item-mail::before {
     content: "";
     height: 27px;
@@ -749,6 +758,7 @@ a:active, a:hover {
     left: -10px;
     bottom: -8px;
 }
+
 /*-----------FORM-----------*/
 
 .form {
@@ -778,6 +788,7 @@ a:active, a:hover {
     color: var(--color-primary);
     font-weight: var(--font-size-big-bold);
 }
+
 /*-------*/
 .form__input {
     line-height: 23px;
@@ -799,7 +810,7 @@ a:active, a:hover {
     margin-top: 34px;
 }
 
-.form__checkbox-icon  {
+.form__checkbox-icon {
     height: 24px;
     width: 24px;
     flex-shrink: 0;
@@ -836,5 +847,55 @@ a:active, a:hover {
     border-radius: 35px;
 }
 
+/*-------------------------*/
+/*----------FOOTER--------*/
+/*-------------------------*/
 
+.footer {
+    width: var(--100-percent);
+    height: 89px;
+    background-color: var(--color-light-grey);
+    box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
+}
 
+.footer__content {
+    width: 1352px;
+    height: 100%;
+    margin: 59px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 3px;
+}
+
+.footer__twitter {
+    margin-left: 20px;
+}
+
+/*-----*/
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 3px;
+}
+
+.footer__logo-header {
+    font-family: var(--font-realway);
+    font-size: 26px;
+    color: var(--color-primary);
+    margin-bottom: 7px;
+}
+
+.footer__logo-copy {
+    font-family: var(--font-spen-sans);
+    font-size: 11px;
+    color: var(--color-grey);
+}
+
+.footer__social-media {
+    position: relative;
+    top: 1px;
+}
