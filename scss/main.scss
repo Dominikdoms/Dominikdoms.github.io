@@ -1,13 +1,14 @@
+//Settings-Variables
 @import "settings/variables";
 @import "settings/colors";
+@import "settings/fonts";
+@import "settings/mixins";
 
 //elements
 @import "elements/base";
 @import "elements/benefits";
-@import "elements/buttons";
 @import "elements/contact";
 @import "elements/footer";
-@import "elements/links";
 @import "elements/logo";
 @import "elements/navigation";
 @import "elements/open";
@@ -20,8 +21,5 @@
 @import "generic/gird";
 @import "generic/reset";
 
-//settings
-@import "settings/fonts";
-@import "settings/mixins";
 
 

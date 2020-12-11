@@ -4,11 +4,11 @@
 
 .statistic__header {
   font-size: 36px;
-  font-family: var(--font-realway);
+  font-family: $font-realway;
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  color: var(--color-black);
+  color: $color-black;
 }
 
 .statistic__content {
@@ -23,8 +23,8 @@
 
 .statistic__header__small {
   font-size: 20px;
-  font-family: var(--font-realway);
-  font-weight: var(--font-size-bold);
+  font-family: $font-realway;
+  font-weight: $font-size-bold;
   letter-spacing: 5.96px;
   margin-top: 14.18px;
 }
@@ -32,8 +32,8 @@
 /*-------------------------------*/
 .statistic__text__person {
   font-size: 17px;
-  font-family: var(--font-realway);
-  color: var(--color-grey);
+  font-family: $font-realway;
+  color: $color-grey;
   margin-top: 19.11px;
   position: relative;
   left: -6px;
@@ -41,8 +41,8 @@
 
 .statistic__text__eye {
   font-size: 17px;
-  font-family: var(--font-realway);
-  color: var(--color-grey);
+  font-family: $font-realway;
+  color: $color-grey;
   margin-top: 19.11px;
   width: 120px;
   text-align: center;
@@ -52,8 +52,8 @@
 
 .statistic__text__catalog {
   font-size: 17px;
-  font-family: var(--font-realway);
-  color: var(--color-grey);
+  font-family: $font-realway;
+  color: $color-grey;
   margin-top: 19.11px;
   width: 131px;
   text-align: center;
@@ -103,7 +103,7 @@
 
 .statistic__circle__red {
   border-radius: 50%;
-  background-color: var(--color-redish);
+  background-color: $color-redish;
   width: 63px;
   height: 63px;
   display: inline-block;
@@ -115,7 +115,7 @@
 
 .statistic__circle__blue {
   border-radius: 50%;
-  background-color: var(--color-primary);
+  background-color: $color-primary;
   width: 63px;
   height: 63px;
   display: inline-block;
@@ -127,7 +127,7 @@
 
 .statistic__circle__green {
   border-radius: 50%;
-  background-color: var(--color-green);
+  background-color: $color-green;
   width: 63px;
   height: 63px;
   display: inline-block;

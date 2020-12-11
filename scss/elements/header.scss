@@ -1,5 +1,48 @@
+
+.menu__btn {
+
+}
+
+.menu__toggle {
+
+}
+
+
+
+
 .header {
-  width: var(--100-percent);
+  .menu {
+    &__btn {
+      display: none;
+      position: absolute;
+      top: -9999;
+      left: -9999;
+      opacity: 0;
+    }
+
+    &__toggle {
+      display: none;
+
+      span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-bottom: 3px;
+        background-color: $color-primary;
+        transition: .3s all ease-in-out;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+  }
+  width: $percent-100;
   height: 70px;
   display: flex;
   align-items: center;
@@ -8,8 +51,12 @@
 }
 
 .container {
-  width: var(--contetn-size);
+  width: $content-size;
   margin: 0 auto;
+  @include mobile {
+        width: 100%;
+        padding: 0 15px;
+  }
 }
 
 .header__container {
@@ -24,22 +71,42 @@
 /*}*/
 
 .logo__link {
-  color: var(--color-primary);
+  color: $color-primary;
   text-decoration: none;
   font-size: 32px;
-  font-family: var(--font-realway);
-  font-weight: var(--font-size-small);
+  font-family: $font-realway;
+  font-weight: $font-size-small;
   outline: 0;
 }
 
 .header_nav {
   display: flex;
+
+    @include mobile {
+      position: absolute;
+      left: 0;
+      top: 95px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 20px;
+      display: none;
+
+      .nav-element {
+        padding: 0;
+      }
+
+      .nav__link {
+        display: block;
+        padding: 14px 20px;
+      }
+    }
 }
 
 .nav-element {
   margin-left: 95px;
   font-size: 11px;
-  color: var(--color-light-grey);
+  color: $color-light-grey;
 
 }
 
@@ -49,15 +116,15 @@ a:active, a:hover {
 
 .nav__link {
   text-decoration: none;
-  color: var(--color-grey);
-  font-family: var(--font-spen-sans);
+  color: $color-grey;
+  font-family: $font-open-sans;
   outline: none;
-  font-weight: var(--font-size-bold);
+  font-weight: $font-size-bold;
   border-bottom: 4px solid transparent;
   padding: 28px 17px 24px;
 }
 
 .nav__link:hover {
-  border-color: var(--color-primary);
-  color: var(--color-black);
+  border-color: $color-primary;
+  color: $color-black;
 }

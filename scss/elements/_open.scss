@@ -1,8 +1,3 @@
-@import "../settings/colors";
-
-.open {
-
-}
 
 .open__content {
   display: flex;
@@ -18,7 +13,7 @@
 }
 
 .open__text {
-  font-family: var(--font-spen-sans);
+  font-family: $font-open-sans;
   margin-bottom: 38px;
 }
 
@@ -27,8 +22,8 @@
   background-color: $color-primary;
   padding: 22px 157px;
   text-decoration: none;
-  font-family: var(--font-spen-sans);
-  color: var(--color-white);
+  font-family: $font-open-sans;
+  color: $color-white;
   box-shadow: 0 0 22px 10px rgba(8, 166, 228, 0.16);
 }
 

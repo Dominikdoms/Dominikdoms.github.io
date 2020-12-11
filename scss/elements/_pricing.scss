@@ -6,20 +6,20 @@
 
 .pricing__limited {
   margin-bottom: 41px;
-  font-family: var(--font-realway);
+  font-family: $font-realway;
   color: rgba(19, 37, 59, 1);
   font-size: 12px;
-  font-weight: var(--font-size-bold);
+  font-weight: $font-size-bold;
 }
 
 .pricing__title {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 71px;
-  font-family: var(--font-realway);
-  color: var(--color-black);
+  font-family: $font-realway;
+  color: $color-black;
   font-size: 36px;
-  font-weight: var(--font-size-nowmal);
+  font-weight: $font-size-normal;
 }
 
 .pricing__content {
@@ -32,7 +32,7 @@
 .pricing__box {
   width: 372px;
   height: 461px;
-  border: 1px solid var(--color-redish);
+  border: 1px solid $color-redish;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -41,26 +41,26 @@
 }
 
 .pricing__content-title {
-  font-family: var(--font-realway);
+  font-family: $font-realway;
   font-size: 20px;
-  font-weight: var(--font-size-bold);
+  font-weight: $font-size-bold;
   color: rgba(19, 37, 59, 1);
   margin: 34px 0 14px 0;
 }
 
 .pricing__price {
-  font-family: var(--font-spen-sans);
+  font-family: $font-open-sans;
   font-size: 46px;
-  font-weight: var(--font-size-small);
-  color: var(--color-redish);
+  font-weight: $font-size-small;
+  color: $color-redish;
   margin-bottom: 69px;
 }
 
 .pricing__item {
-  font-family: var(--font-spen-sans);
+  font-family: $font-open-sans;
   font-size: 14px;
-  font-weight: var(--font-size-nowmal);
-  color: var(--color-black);
+  font-weight: $font-size-normal;
+  color: $color-black;
   line-height: 41px;
 }
 
@@ -72,13 +72,13 @@
 .pricing__btn {
   text-align: center;
   border-radius: 23px;
-  background-color: var(--color-redish);
+  background-color: $color-redish;
   padding: 17px 56px;
   position: absolute;
   align-content: center;
   bottom: -24px;
   text-decoration: none;
-  color: var(--color-white);
+  color: $color-white;
 }
 
 .pricing__item::before {
@@ -87,7 +87,7 @@
   height: 11px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../assets/Ckechmark-1.svg");
+  background-image: url("../../assets/Ckechmark-1.svg");
 }
 
 .pricing__item-not::before {
@@ -96,7 +96,7 @@
   height: 11px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../assets/Close.svg");
+  background-image: url("../../assets/Close.svg");
 }
 
 /*------PROFESSIONAL--------*/
@@ -118,7 +118,7 @@
 .pricing__box-professional {
   width: 405px;
   height: 500px;
-  border: 1px solid var(--color-primary);
+  border: 1px solid $color-primary;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -126,33 +126,33 @@
   position: relative;
   left: 0;
   bottom: 18px;
-  box-shadow: 0 0 46px -23px var(--color-primary);
+  box-shadow: 0 0 46px -23px $color-primary;
 }
 
 .pricing__btn-professional {
   text-align: center;
   border-radius: 23px;
-  background-color: var(--color-primary);
+  background-color: $color-primary;
   padding: 17px 64px;
   position: absolute;
   align-content: center;
   bottom: -24px;
   text-decoration: none;
-  color: var(--color-white);
+  color: $color-white;
 }
 
 /*--------PREMIUM-----------*/
 
 
 .pricing__price-premium {
-  color: var(--color-green);
+  color: $color-green;
   margin-bottom: 17px;
 }
 
 .pricing__btn-premium {
-  background-color: var(--color-green);
+  background-color: $color-green;
 }
 
 .pricing__box-premium {
-  border: 1px solid var(--color-green);
+  border: 1px solid $color-green;
 }
