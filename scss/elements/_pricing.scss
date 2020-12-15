@@ -148,19 +148,32 @@
     font-weight: 700;
     margin: 9px 0 0 5px;
   }
-}
-//----------------------------
-//----------PREMIUM-----------
-//----------------------------
 
+  //----------------------------
+  //----------PREMIUM-----------
+  //----------------------------
 
-.pricing__price-premium {
-  margin-bottom: 3px;
+  .pricing__box-premium {
+    border: 1px solid $color-green;
+  }
+
+  .pricing__price-premium {
+    margin-bottom: 3px;
+  }
+
+  .type-premium {
+    margin: 26px 0 26px 28px;
+  }
+
+  .pricing__btn-premium {
+    background-color: $color-green;
+  }
+
+  .pricing__price-premium {
+    color: $color-green;
+  }
 }
 
-.type-premium {
-  margin: 26px 0 26px 28px;
-}
 //####################################
 
 @include desktop {
