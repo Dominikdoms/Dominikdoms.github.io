@@ -1,6 +1,4 @@
 @include mobile {
-
-
   .contact {
     display: flex;
     flex-direction: column;
@@ -18,13 +16,11 @@
     color: $color-black;
   }
 
-
   .contact__instruction {
     font-family: $font-open-sans;
     font-size: 16px;
     margin-bottom: 42px;
   }
-
   .contact__details {
     display: flex;
     flex-direction: column;
@@ -38,6 +34,7 @@
     font-size: 16px;
     position: relative;
     left: 9px;
+    margin-bottom: 16px;
   }
 
   .details__item-tel {
@@ -71,11 +68,166 @@
     left: -10px;
     bottom: -8px;
   }
-
-
   //------------FORM-------------
+  .form {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 157px;
+  }
 
+  .name {
+    margin-bottom: 45px;
+  }
 
+  .form__field {
+    height: 57px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $color-black;
+  }
+
+  .form__label {
+    margin-bottom: 10px;
+    font-family: $font-open-sans;
+    font-size: 11px;
+    color: $color-primary;
+    font-weight: $font-size-bold;
+  }
+
+  /*-------*/
+  .form__input {
+    line-height: 23px;
+    border: 0;
+    margin-bottom: 9px;
+  }
+
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+  }
+
+  .checkbox {
+    cursor: pointer;
+    display: flex;
+    margin-top: 31px;
+  }
+
+  .form__checkbox-icon {
+    height: 24px;
+    width: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    border: 1px solid $color-grey;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .form__checkbox-text {
+    font-family: $font-open-sans;
+    font-size: 12px;
+    line-height: 17px;
+    color: $color-grey;
+    width: 277px;
+    height: 156px;
+  }
+
+  .checkbox input:checked + span {
+    background-image: url("../../assets/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .contact__btn {
+    font-family: $font-open-sans;
+    font-size: 13px;
+    color: $color-white;
+    background-color: $color-primary;
+    padding: 20px 98px;
+    position: relative;
+    right: -89px;
+    bottom: -21px;
+    border: 0;
+    border-radius: 35px;
+  }
+}
+
+@include desktop {
+  .contact {
+    margin: 155px auto 59px auto;
+    height: 376px;
+    width: 896px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__column {
+    width: 50%;
+  }
+
+  .contact__column-title {
+    font-family: $font-realway;
+    font-size: 49px;
+    font-weight: $font-size-normal;
+    margin-bottom: 22px;
+    color: var(--color-black);
+  }
+
+  .contact__instruction {
+    font-family: var(--font-spen-sans);
+    font-size: 16px;
+    font-weight: $color-black;
+    margin-bottom: 42px;
+  }
+
+  .details__item-mail {
+    text-decoration: none;
+    color: $color-grey;
+    font-family: $font-open-sans;
+    font-size: 16px;
+    position: relative;
+    left: 9px;
+  }
+
+  .details__item-tel {
+    text-decoration: none;
+    color: $color-grey;
+    font-family: $font-open-sans;
+    font-size: 16px;
+    margin-left: calc(57px - 27px);
+    position: relative;
+    left: 8px;
+  }
+
+  .details__item-mail::before {
+    content: "";
+    height: 27px;
+    width: 27px;
+    display: inline-block;
+    background-image: url("../../assets/Mail Icon.svg");
+    position: relative;
+    left: -10px;
+    bottom: -9px;
+  }
+
+  .details__item-tel::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../assets/Phone Icon.svg");
+    position: relative;
+    left: -10px;
+    bottom: -8px;
+  }
+
+  /*-----------FORM-----------*/
 
   .form {
     margin: 0;
@@ -162,185 +314,4 @@
     border: 0;
     border-radius: 35px;
   }
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//.contact {
-//  margin: 155px auto 59px auto;
-//  height: 376px;
-//  width: 896px;
-//  display: flex;
-//  justify-content: center;
-//}
-//
-//.contact__column {
-//  width: 50%;
-//}
-//
-//.contact__column-title {
-//  font-family: $font-realway;
-//  font-size: 49px;
-//  font-weight: $font-size-normal;
-//  margin-bottom: 22px;
-//  color: var(--color-black);
-//}
-//
-//.contact__instruction {
-//  font-family: var(--font-spen-sans);
-//  font-size: 16px;
-//  font-weight: $color-black;
-//  margin-bottom: 42px;
-//}
-//
-//.details__item-mail {
-//  text-decoration: none;
-//  color: $color-grey;
-//  font-family: $font-open-sans;
-//  font-size: 16px;
-//  position: relative;
-//  left: 9px;
-//}
-//
-//.details__item-tel {
-//  text-decoration: none;
-//  color: $color-grey;
-//  font-family: $font-open-sans;
-//  font-size: 16px;
-//  margin-left: calc(57px - 27px);
-//  position: relative;
-//  left: 8px;
-//}
-//
-//.details__item-mail::before {
-//  content: "";
-//  height: 27px;
-//  width: 27px;
-//  display: inline-block;
-//  background-image: url("../../assets/Mail Icon.svg");
-//  position: relative;
-//  left: -10px;
-//  bottom: -9px;
-//}
-//
-//.details__item-tel::before {
-//  content: "";
-//  display: inline-block;
-//  width: 27px;
-//  height: 27px;
-//  background-image: url("../../assets/Phone Icon.svg");
-//  position: relative;
-//  left: -10px;
-//  bottom: -8px;
-//}
-//
-///*-----------FORM-----------*/
-//
-//.form {
-//  margin: 0;
-//  display: flex;
-//  flex-direction: column;
-//  width: 100%;
-//  height: 157px;
-//}
-//
-//.name {
-//  margin-bottom: 45px;
-//}
-//
-//.form__field {
-//  height: 57px;
-//  width: 100%;
-//  display: flex;
-//  flex-direction: column;
-//  border-bottom: 1px solid $color-black;
-//}
-//
-//.form__label {
-//  margin-bottom: 10px;
-//  font-family: $font-open-sans;
-//  font-size: 11px;
-//  color: $color-primary;
-//  font-weight: $font-size-bold;
-//}
-//
-///*-------*/
-//.form__input {
-//  line-height: 23px;
-//  border: 0;
-//  margin-bottom: 9px;
-//}
-//
-//.checkbox input {
-//  position: absolute;
-//  opacity: 0;
-//  cursor: pointer;
-//  width: 0;
-//  height: 0;
-//}
-//
-//.checkbox {
-//  cursor: pointer;
-//  display: flex;
-//  margin-top: 34px;
-//}
-//
-//.form__checkbox-icon {
-//  height: 24px;
-//  width: 24px;
-//  flex-shrink: 0;
-//  flex-basis: 24px;
-//  border: 1px solid $color-grey;
-//  border-radius: 4px;
-//  cursor: pointer;
-//  margin-right: 10px;
-//}
-//
-//.form__checkbox-text {
-//  font-family: $font-open-sans;
-//  font-size: 12px;
-//  line-height: 17px;
-//  color: $color-grey;
-//}
-//
-//.checkbox input:checked + span {
-//  background-image: url("../../assets/Checkmark.svg");
-//  background-repeat: no-repeat;
-//  background-position: center;
-//}
-//
-//.contact__btn {
-//  font-family: $font-open-sans;
-//  font-size: 13px;
-//  color: $color-white;
-//  background-color: $color-primary;
-//  padding: 20px 97px;
-//  position: relative;
-//  right: -223px;
-//  bottom: -20px;
-//  border: 0;
-//  border-radius: 35px;
-//}
