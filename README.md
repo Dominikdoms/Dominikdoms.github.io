@@ -1,4 +1,4 @@
 # Dominikdoms.github.io
-Pierwszy warsztat
+Drugi warsztat 
 
 'https://dominikdoms.github.io/'
