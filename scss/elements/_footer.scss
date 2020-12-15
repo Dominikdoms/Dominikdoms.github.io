@@ -1,48 +1,101 @@
-.footer {
-  width: $percent-100;
-  height: 89px;
-  background-color: $color-light-grey;
-  box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
-}
+@include mobile {
+  .footer {
+    width: $percent-100;
+    height: 89px;
+    background-color: $color-light-grey;
+    box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
+  }
 
-.footer__content {
-  width: 1352px;
-  height: 100%;
-  margin: 59px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  top: 3px;
-}
+  .footer__content {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 3px;
+  }
 
-.footer__twitter {
-  margin-left: 20px;
-}
+  .footer__twitter {
+    margin-left: 8px;
+  }
 
-/*-----*/
+  /*-----*/
 
-.footer__logo {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 3px;
-}
+  .footer__logo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 3px;
+    margin-left: 17px;
+  }
 
-.footer__logo-header {
-  font-family: $font-realway;
-  font-size: 26px;
-  color: $color-primary;
-  margin-bottom: 7px;
-}
+  .footer__logo-header {
+    font-family: $font-realway;
+    font-size: 26px;
+    color: $color-primary;
+    margin-bottom: 7px;
+  }
 
-.footer__logo-copy {
-  font-family: $font-open-sans;
-  font-size: 11px;
-  color: $color-grey;
-}
+  .footer__logo-copy {
+    font-family: $font-open-sans;
+    font-size: 9px;
+    color: $color-grey;
+  }
 
-.footer__social-media {
-  position: relative;
-  top: 1px;
+  .footer__social-media {
+    position: relative;
+    top: 1px;
+    margin-right: 25px;
+  }
 }
+//########################
+//
+//.footer {
+//  width: $percent-100;
+//  height: 89px;
+//  background-color: $color-light-grey;
+//  box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
+//}
+//
+//.footer__content {
+//  width: 1352px;
+//  height: 100%;
+//  margin: 59px auto;
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  position: relative;
+//  top: 3px;
+//}
+//
+//.footer__twitter {
+//  margin-left: 20px;
+//}
+//
+///*-----*/
+//
+//.footer__logo {
+//  display: flex;
+//  flex-direction: column;
+//  position: relative;
+//  top: 3px;
+//}
+//
+//.footer__logo-header {
+//  font-family: $font-realway;
+//  font-size: 26px;
+//  color: $color-primary;
+//  margin-bottom: 7px;
+//}
+//
+//.footer__logo-copy {
+//  font-family: $font-open-sans;
+//  font-size: 11px;
+//  color: $color-grey;
+//}
+//
+//.footer__social-media {
+//  position: relative;
+//  top: 1px;
+//}
