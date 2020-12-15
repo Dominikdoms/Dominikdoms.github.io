@@ -1,5 +1,8 @@
 .statistic {
   margin-bottom: 121px;
+  @include mobile {
+    margin-bottom: 12px;
+  }
 }
 
 .statistic__header {
@@ -9,16 +12,27 @@
   justify-content: center;
   margin-top: 100px;
   color: $color-black;
+
+  @include mobile {
+    text-align: center;
+    margin-top: 55px;
+  }
 }
 
 .statistic__content {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+
+  @include mobile {
+    flex-direction: column;
+    margin-top: -4px;
+  }
 }
 
 .statistic__icon__margin {
-  margin: 0 105px;
+  //margin: 0 105px;
+  margin: 35px 116px;
 }
 
 .statistic__header__small {
@@ -65,6 +79,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
 }
 
 .statistic__person__img {
@@ -111,6 +127,9 @@
   z-index: -1;
   left: 22px;
   top: -5px;
+  @include mobile {
+    left: 33px;
+  }
 }
 
 .statistic__circle__blue {
@@ -135,4 +154,8 @@
   z-index: -1;
   left: 30px;
   top: -7px;
+
+  @include mobile {
+    left: 40px;
+  }
 }
