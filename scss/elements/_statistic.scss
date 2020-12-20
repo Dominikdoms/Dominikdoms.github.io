@@ -1,12 +1,12 @@
-@include mobile {
+
   .statistic {
     margin-bottom: 25px;
   }
 
   .statistic__header {
-    width: 303px;
+    //width: 100%;
     font-size: 30px;
-    margin: 59px auto 0 auto;
+    margin: 59px 15px 0 15px;
     font-family: $font-realway;
     text-align: center;
     color: $color-black;
@@ -18,6 +18,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 6% 20%;
+    }
   }
 
   .statistic__icon__margin {
@@ -139,146 +144,146 @@
     left: 30px;
     top: -7px;
   }
-}
-
-@include desktop {
-
-  .statistic {
-    margin-bottom: 121px;
-  }
-
-  .statistic__header {
-    font-size: 36px;
-    font-family: $font-realway;
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    color: $color-black;
-  }
-
-  .statistic__content {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-  }
-
-  .statistic__icon__margin {
-    margin: 0 105px;
-  }
-
-  .statistic__header__small {
-    font-size: 20px;
-    font-family: $font-realway;
-    font-weight: $font-size-bold;
-    letter-spacing: 5.96px;
-    margin-top: 14.18px;
-  }
-
-  /*-------------------------------*/
-  .statistic__text__person {
-    font-size: 17px;
-    font-family: $font-realway;
-    color: $color-grey;
-    margin-top: 19.11px;
-    position: relative;
-    left: -6px;
-  }
-
-  .statistic__text__eye {
-    font-size: 17px;
-    font-family: $font-realway;
-    color: $color-grey;
-    margin-top: 19.11px;
-    width: 120px;
-    text-align: center;
-    position: relative;
-    left: -3px;
-  }
-
-  .statistic__text__catalog {
-    font-size: 17px;
-    font-family: $font-realway;
-    color: $color-grey;
-    margin-top: 19.11px;
-    width: 131px;
-    text-align: center;
-  }
-
-  /*-------------------------*/
-  .statistic__person {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .statistic__person__img {
-    position: relative;
-    left: 14px;
-  }
 
 
-  .statistic__eye {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .statistic__eye__img {
-    position: relative;
-    left: 14px;
-  }
-
-
-  .statistic__catalog {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .statistic__catalog__img {
-    position: relative;
-    left: 21px;
-  }
-
-  /*---------------------------*/
-
-  .statistic__circle__red {
-    border-radius: 50%;
-    background-color: $color-redish;
-    width: 63px;
-    height: 63px;
-    display: inline-block;
-    position: absolute;
-    z-index: -1;
-    left: 22px;
-    top: -5px;
-  }
-
-  .statistic__circle__blue {
-    border-radius: 50%;
-    background-color: $color-primary;
-    width: 63px;
-    height: 63px;
-    display: inline-block;
-    position: absolute;
-    z-index: -1;
-    left: 31px;
-    top: -13px;
-  }
-
-  .statistic__circle__green {
-    border-radius: 50%;
-    background-color: $color-green;
-    width: 63px;
-    height: 63px;
-    display: inline-block;
-    position: absolute;
-    z-index: -1;
-    left: 30px;
-    top: -7px;
-  }
-}
+//@include desktop {
+//
+//  .statistic {
+//    margin-bottom: 121px;
+//  }
+//
+//  .statistic__header {
+//    font-size: 36px;
+//    font-family: $font-realway;
+//    display: flex;
+//    justify-content: center;
+//    margin-top: 100px;
+//    color: $color-black;
+//  }
+//
+//  .statistic__content {
+//    display: flex;
+//    justify-content: center;
+//    margin-top: 100px;
+//  }
+//
+//  .statistic__icon__margin {
+//    margin: 0 105px;
+//  }
+//
+//  .statistic__header__small {
+//    font-size: 20px;
+//    font-family: $font-realway;
+//    font-weight: $font-size-bold;
+//    letter-spacing: 5.96px;
+//    margin-top: 14.18px;
+//  }
+//
+//  /*-------------------------------*/
+//  .statistic__text__person {
+//    font-size: 17px;
+//    font-family: $font-realway;
+//    color: $color-grey;
+//    margin-top: 19.11px;
+//    position: relative;
+//    left: -6px;
+//  }
+//
+//  .statistic__text__eye {
+//    font-size: 17px;
+//    font-family: $font-realway;
+//    color: $color-grey;
+//    margin-top: 19.11px;
+//    width: 120px;
+//    text-align: center;
+//    position: relative;
+//    left: -3px;
+//  }
+//
+//  .statistic__text__catalog {
+//    font-size: 17px;
+//    font-family: $font-realway;
+//    color: $color-grey;
+//    margin-top: 19.11px;
+//    width: 131px;
+//    text-align: center;
+//  }
+//
+//  /*-------------------------*/
+//  .statistic__person {
+//    position: relative;
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//  }
+//
+//  .statistic__person__img {
+//    position: relative;
+//    left: 14px;
+//  }
+//
+//
+//  .statistic__eye {
+//    position: relative;
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//  }
+//
+//
+//  .statistic__eye__img {
+//    position: relative;
+//    left: 14px;
+//  }
+//
+//
+//  .statistic__catalog {
+//    position: relative;
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//  }
+//
+//  .statistic__catalog__img {
+//    position: relative;
+//    left: 21px;
+//  }
+//
+//  /*---------------------------*/
+//
+//  .statistic__circle__red {
+//    border-radius: 50%;
+//    background-color: $color-redish;
+//    width: 63px;
+//    height: 63px;
+//    display: inline-block;
+//    position: absolute;
+//    z-index: -1;
+//    left: 22px;
+//    top: -5px;
+//  }
+//
+//  .statistic__circle__blue {
+//    border-radius: 50%;
+//    background-color: $color-primary;
+//    width: 63px;
+//    height: 63px;
+//    display: inline-block;
+//    position: absolute;
+//    z-index: -1;
+//    left: 31px;
+//    top: -13px;
+//  }
+//
+//  .statistic__circle__green {
+//    border-radius: 50%;
+//    background-color: $color-green;
+//    width: 63px;
+//    height: 63px;
+//    display: inline-block;
+//    position: absolute;
+//    z-index: -1;
+//    left: 30px;
+//    top: -7px;
+//  }
+//}

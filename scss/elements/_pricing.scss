@@ -1,338 +1,235 @@
-@include mobile {
-  .pricing {
-    margin: 0 auto;
-  }
 
-  .pricing__limited {
-    margin-bottom: 41px;
-    font-family: $font-realway;
-    color: rgba(19, 37, 59, 1);
-    font-size: 12px;
-    font-weight: $font-size-bold;
-  }
+.pricing {
+  margin: 0 auto;
+}
 
-  .pricing__title {
-    text-align: center;
-    margin-top: 53px;
-    margin-bottom: 21px;
-    font-family: "Raleway", sans-serif;
-    color: #000000;
-    font-size: 36px;
-    font-weight: 400;
-  }
+.pricing__limited {
+  margin-bottom: 41px;
+  font-family: $font-realway;
+  color: rgba(19, 37, 59, 1);
+  font-size: 12px;
+  font-weight: $font-size-bold;
+}
 
-  .pricing__content {
-    display: flex;
-    flex-direction: column;
-  }
-  //---------------------
-  //-------BASIC---------
-  //---------------------
-  .pricing__box {
-    width: 293px;
-    height: 251px;
-    border: 1px solid #FB3B64;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto 53px auto;
-    position: relative;
-  }
-
-  .pricing__content-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #13253b;
-    margin: 18px 0 14px 0;
-  }
-
-  .pricing__type-price {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    margin-bottom: 45px;
-  }
-
-  .pricing__price {
-    font-family: $font-open-sans;
-    font-size: 46px;
-    font-weight: $font-size-small;
-    color: $color-redish;
-  }
-
-  .pricing__item {
-    font-family: $font-open-sans;
-    font-size: 14px;
-    font-weight: $font-size-normal;
-    color: $color-black;
-    line-height: 41px;
-  }
-
-  .pricing__items {
-    margin-bottom: 59px;
-    text-align: left;
-    margin-left: 35px;
-    height: 175px;
-  }
-
-  .pricing__btn {
-    border-radius: 23px;
-    background-color: #FB3B64;
-    padding: 17px 56px;
-    position: absolute;
-    align-content: center;
-    bottom: -24px;
-    left: 25%;
-    text-decoration: none;
-    color: #FFFFFF;
-  }
-
-  .pricing__item::before {
-    content: "";
-    width: 11px;
-    height: 11px;
-    display: inline-block;
-    margin-right: 10px;
-    background-image: url("../../assets/Ckechmark-1.svg");
-  }
-
-  .pricing__item-not::before {
-    content: "";
-    width: 11px;
-    height: 11px;
-    display: inline-block;
-    margin-right: 10px;
-    background-image: url("../../assets/Close.svg");
-  }
-
-  //----------------------------
-  //-------PROFESSIONAL---------
-  //----------------------------
-
-
-  .pricing__box-professional {
-    width: 339px;
-    height: 277px;
-    border: 1px solid $color-primary;
-    box-shadow: 0 0 46px -23px $color-primary;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-
-  .pricing__btn-professional {
-    background-color: $color-primary;
-  }
-
-  .pricing__price-professional {
-    color: $color-primary;
-  }
-
-  .pricing__items-professional {
-    margin-bottom: 32px;
-    text-align: left;
-    height: 175px;
-    margin-left: 0;
-  }
-
-  .type-professional {
-    margin: 3px 23px 21px 28px;
-  }
-
-  .pricing__limited-professional {
-    font-family: "Raleway", sans-serif;
-    color: #13253b;
-    font-size: 12px;
-    font-weight: 700;
-    margin: 9px 0 0 5px;
-  }
-
-  //----------------------------
-  //----------PREMIUM-----------
-  //----------------------------
-
-  .pricing__box-premium {
-    border: 1px solid $color-green;
-  }
-
-  .pricing__price-premium {
-    margin-bottom: 3px;
-  }
-
-  .type-premium {
-    margin: 26px 0 26px 28px;
-  }
-
-  .pricing__btn-premium {
-    background-color: $color-green;
-  }
-
-  .pricing__price-premium {
-    color: $color-green;
+.pricing__title {
+  text-align: center;
+  margin-top: 53px;
+  margin-bottom: 21px;
+  font-family: "Raleway", sans-serif;
+  color: $color-black;
+  font-size: 36px;
+  font-weight: 400;
+  @include desktop {
+    margin: unset;
+    padding: 100px 0 66px 0;
   }
 }
 
-//####################################
-
-@include desktop {
-
-  .pricing {
-    width: 1266px;
-    margin: 100px auto;
+.pricing__content {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+    justify-content: center;
   }
+}
 
-  .pricing__limited {
-    margin-bottom: 41px;
-    font-family: $font-realway;
-    color: rgba(19, 37, 59, 1);
-    font-size: 12px;
-    font-weight: $font-size-bold;
-  }
-
-  .pricing__title {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 71px;
-    font-family: $font-realway;
-    color: $color-black;
-    font-size: 36px;
-    font-weight: $font-size-normal;
-  }
-
-  .pricing__content {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  /*-------BASIC---------*/
-
-  .pricing__box {
+//---------------------
+//-------BASIC---------
+//---------------------
+.pricing__box {
+  width: 293px;
+  height: 251px;
+  border: 1px solid #FB3B64;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto 53px auto;// ################################
+  position: relative;
+  @include desktop {
     width: 372px;
     height: 461px;
-    border: 1px solid $color-redish;
-    border-radius: 18px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-
-  .pricing__content-title {
-    font-family: $font-realway;
-    font-size: 20px;
-    font-weight: $font-size-bold;
-    color: rgba(19, 37, 59, 1);
-    margin: 34px 0 14px 0;
-  }
-
-  .pricing__price {
-    font-family: $font-open-sans;
-    font-size: 46px;
-    font-weight: $font-size-small;
-    color: $color-redish;
-    margin-bottom: 69px;
-  }
-
-  .pricing__item {
-    font-family: $font-open-sans;
-    font-size: 14px;
-    font-weight: $font-size-normal;
-    color: $color-black;
-    line-height: 41px;
-  }
-
-  .pricing__items {
-    margin-bottom: 55px;
-    text-align: center;
-  }
-
-  .pricing__btn {
-    text-align: center;
-    border-radius: 23px;
-    background-color: $color-redish;
-    padding: 17px 56px;
-    position: absolute;
-    align-content: center;
-    bottom: -24px;
-    text-decoration: none;
-    color: $color-white;
-  }
-
-  .pricing__item::before {
-    content: "";
-    width: 11px;
-    height: 11px;
-    display: inline-block;
-    margin-right: 10px;
-    background-image: url("../../assets/Ckechmark-1.svg");
-  }
-
-  .pricing__item-not::before {
-    content: "";
-    width: 11px;
-    height: 11px;
-    display: inline-block;
-    margin-right: 10px;
-    background-image: url("../../assets/Close.svg");
-  }
-
-  /*------PROFESSIONAL--------*/
-
-  .pricing__content-title-professional {
-    font-size: 21px;
-    margin-bottom: 14px;
-  }
-
-  .pricing__price-professional {
-    color: var(--color-primary);
-    margin-bottom: 22px;
-  }
-
-  .pricing__limited-professional {
-    margin-bottom: 52px;
-  }
-
-  .pricing__box-professional {
-    width: 405px;
-    height: 500px;
-    border: 1px solid $color-primary;
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 0;
-    bottom: 18px;
-    box-shadow: 0 0 46px -23px $color-primary;
-  }
-
-  .pricing__btn-professional {
-    text-align: center;
-    border-radius: 23px;
-    background-color: $color-primary;
-    padding: 17px 64px;
-    position: absolute;
-    align-content: center;
-    bottom: -24px;
-    text-decoration: none;
-    color: $color-white;
-  }
-
-  /*--------PREMIUM-----------*/
-
-
-  .pricing__price-premium {
-    color: $color-green;
-    margin-bottom: 17px;
-  }
-
-  .pricing__btn-premium {
-    background-color: $color-green;
-  }
-
-  .pricing__box-premium {
-    border: 1px solid $color-green;
+    margin: unset;
   }
 }
+
+.pricing__content-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #13253b;
+  margin: 18px 0 14px 0;
+  @include desktop {
+    margin: 34px 0 14px 0;
+  }
+}
+
+.pricing__type-price {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-bottom: 45px;
+  @include desktop {
+    margin-left: unset;
+    margin-bottom: 69px;
+  }
+}
+
+.pricing__price {
+  font-family: $font-open-sans;
+  font-size: 46px;
+  font-weight: $font-size-small;
+  color: $color-redish;
+}
+
+.pricing__item {
+  font-family: $font-open-sans;
+  font-size: 14px;
+  font-weight: $font-size-normal;
+  color: $color-black;
+  line-height: 41px;
+}
+
+.pricing__items {
+  margin-bottom: 59px;
+  text-align: left;
+  margin-left: 35px;
+  height: 175px;
+  @include desktop {
+    text-align: center;
+    margin-bottom: unset;
+    margin-left: unset;
+  }
+}
+
+.pricing__btn {
+  border-radius: 23px;
+  background-color: #FB3B64;
+  padding: 17px 56px;
+  position: absolute;
+  align-content: center;
+  bottom: -24px;
+  left: 25%;
+  text-decoration: none;
+  color: $color-white;
+  @include desktop {
+    left: unset;
+  }
+}
+
+.pricing__item::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("../../assets/Ckechmark-1.svg");
+}
+
+.pricing__item-not::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url("../../assets/Close.svg");
+}
+
+//----------------------------
+//-------PROFESSIONAL---------
+//----------------------------
+
+
+.pricing__box-professional {
+  width: 339px;
+  height: 277px;
+  border: 1px solid $color-primary;
+  box-shadow: 0 0 46px -23px $color-primary;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @include desktop {
+    width: 405px;
+    height: 500px;
+    position: relative;
+    top: -16px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+.pricing__btn-professional {
+  background-color: $color-primary;
+}
+
+.pricing__price-professional {
+  color: $color-primary;
+}
+
+.pricing__items-professional {
+  margin-bottom: 32px;
+  text-align: left;
+  height: 175px;
+  margin-left: 0;
+  @include desktop {
+    text-align: center;
+  }
+}
+
+.type-professional {
+  margin: 3px 23px 21px 28px;
+  @include desktop {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.pricing__limited-professional {
+  font-family: "Raleway", sans-serif;
+  color: #13253b;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 9px 0 0 5px;
+  @include desktop {
+    margin-top: 20px;
+  }
+}
+
+//----------------------------
+//----------PREMIUM-----------
+//----------------------------
+
+.pricing__box-premium {
+  border: 1px solid $color-green;
+}
+
+.pricing__price-premium {
+  margin-bottom: 3px;
+}
+
+@include desktop {
+  .pricing__limited {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+
+.type-premium {
+  margin: 26px 0 26px 28px;
+  @include desktop {
+    margin: unset;
+    text-align: center;
+  }
+}
+
+.pricing__btn-premium {
+  background-color: $color-green;
+}
+
+.pricing__price-premium {
+  color: $color-green;
+}
+
