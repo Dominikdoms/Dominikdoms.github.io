@@ -1,4 +1,3 @@
-
 .header__container {
   width: $percent-100;
   height: 70px;
@@ -10,11 +9,15 @@
   position: relative;
   z-index: 2;
 
+
   .logo__link {
     color: $color-primary;
     font-size: 32px;
     font-family: $font-realway;
     margin-left: 25px;
+    @include desktop {
+      margin-left: 135px;
+    }
   }
 
   a {
@@ -41,6 +44,9 @@
       height: 2px;
       margin: 3px;
       background-color: $color-primary;
+      @include desktop {
+        display: none;
+      }
     }
   }
 
@@ -55,36 +61,48 @@
       ~ .header__navigation {
         display: block;
       }
+
       ~ .menu__toggle span {
         position: absolute;
         left: -25px;
         top: -3px;
-          &:nth-child(1){
-            transform: rotate(45deg);
-          }
-        &:nth-child(2){
+
+        &:nth-child(1) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
           display: none;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
           transform: rotate(-45deg);
         }
       }
 
     }
   }
-}
 
-.header__navigation {
-  display: none;
-  list-style: none;
-  width: 100vw;
-  height: 176px;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  background: $color-white;
-  z-index: 1;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16) inset;
+  .header__navigation {
+    //display: none;
+    list-style: none;
+    width: 100vw;
+    height: 176px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: $color-white;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16) inset;
+    @include desktop {
+      display: unset;
+      width: unset;
+      height: unset;
+      position: unset;
+      background: unset;
+      box-shadow: unset;
+    }
+  }
 }
 
 .header_list {
@@ -92,11 +110,24 @@
   display: flex;
   flex-direction: column;
   margin: 32px 24px;
+  @include desktop {
+    flex-direction: row;
+    margin: 0px 88px;
+  }
 
   .nav-element {
     margin-bottom: 14px;
     font-family: $font-open-sans;
     font-weight: $font-size-bold;
+    @include desktop {
+      margin: 0 57px;
+      padding: 27px 15px;
+      font-size: 11px;
+      border-bottom: 4px solid transparent;
+      &:hover {
+        border-color: $color-primary;
+      }
+    }
 
     a {
       &:hover, &:checked {
@@ -109,120 +140,3 @@
   }
 }
 
-
-//.header {
-//  .menu {
-//    &__btn {
-//      display: none;
-//      position: absolute;
-//      top: -9999;
-//      left: -9999;
-//      opacity: 0;
-//    }
-//
-//    &__toggle {
-//      display: none;
-//
-//      span {
-//        width: 20px;
-//        height: 2px;
-//        display: block;
-//        margin-bottom: 3px;
-//        background-color: $color-primary;
-//        transition: .3s all ease-in-out;
-//
-//        &:last-child {
-//          margin-bottom: 0;
-//        }
-//      }
-//
-//      @include mobile {
-//        display: block;
-//      }
-//    }
-//
-//  }
-//  width: $percent-100;
-//  height: 70px;
-//  display: flex;
-//  align-items: center;
-//  text-decoration: none;
-//  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
-//}
-//
-//.container {
-//  width: $content-size;
-//  margin: 0 auto;
-//  @include mobile {
-//        width: 100%;
-//        padding: 0 15px;
-//    margin: 0 auto;
-//  }
-//}
-//
-//.header__container {
-//  display: flex;
-//  justify-content: space-between;
-//  align-items: center;
-//  height: 100%;
-//}
-//
-//
-//.logo__link {
-//  color: $color-primary;
-//  text-decoration: none;
-//  font-size: 32px;
-//  font-family: $font-realway;
-//  font-weight: $font-size-small;
-//  outline: 0;
-//}
-//
-//.header_nav {
-//  display: flex;
-//
-//    @include mobile {
-//      position: absolute;
-//      left: 0;
-//      top: 95px;
-//      flex-direction: column;
-//      background-color: white;
-//      width: 100%;
-//      padding-bottom: 20px;
-//      display: none;
-//
-//      .nav-element {
-//        padding: 0;
-//      }
-//
-//      .nav__link {
-//        display: block;
-//        padding: 14px 20px;
-//      }
-//    }
-//}
-//
-//.nav-element {
-//  margin-left: 95px;
-//  font-size: 11px;
-//  color: $color-light-grey;
-//
-//}
-//
-//a:active, a:hover {
-//  outline: none;
-//}
-//
-//.nav__link {
-//  text-decoration: none;
-//  color: $color-grey;
-//  font-family: $font-open-sans;
-//  outline: none;
-//  font-weight: $font-size-bold;
-//  border-bottom: 4px solid transparent;
-//  padding: 28px 17px 24px;
-//}
-//
-//.nav__link:hover {
-//  border-color: $color-primary;
-//  color: $color-black;
-//}
