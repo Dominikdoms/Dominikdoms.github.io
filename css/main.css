@@ -518,103 +518,60 @@
   margin-bottom: 66px;
 }
 
-@media (max-width: 841px) {
-  .footer {
-    width: 100vw;
-    height: 89px;
-    background-color: #F7F7F7;
-    box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
-  }
+.footer {
+  width: 100vw;
+  height: 89px;
+  background-color: #F7F7F7;
+  box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
+}
 
-  .footer__content {
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: 3px;
-  }
-
-  .footer__twitter {
-    margin-left: 8px;
-  }
-
-  .footer__logo {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 3px;
-    margin-left: 17px;
-  }
-
-  .footer__logo-header {
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    color: #08A6E4;
-    margin-bottom: 7px;
-  }
-
-  .footer__logo-copy {
-    font-family: "Open Sans", sans-serif;
-    font-size: 9px;
-    color: #A5A5A5;
-  }
-
-  .footer__social-media {
-    position: relative;
-    top: 1px;
-    margin-right: 25px;
-  }
+.footer__content {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 3px;
 }
 @media (min-width: 1354px) {
-  .footer {
-    width: 100vw;
-    height: 89px;
-    background-color: #F7F7F7;
-    box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
-  }
-
   .footer__content {
-    width: 1352px;
-    height: 100%;
-    margin: 59px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    top: 3px;
-  }
-
-  .footer__twitter {
-    margin-left: 20px;
-  }
-
-  .footer__logo {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 3px;
-  }
-
-  .footer__logo-header {
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    color: #08A6E4;
-    margin-bottom: 7px;
-  }
-
-  .footer__logo-copy {
-    font-family: "Open Sans", sans-serif;
-    font-size: 11px;
-    color: #A5A5A5;
-  }
-
-  .footer__social-media {
-    position: relative;
-    top: 1px;
+    margin-left: 137px;
+    margin-right: 136px;
   }
 }
+
+.footer__twitter {
+  margin-left: 8px;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 3px;
+  margin-left: 17px;
+}
+
+.footer__logo-header {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: #08A6E4;
+  margin-bottom: 7px;
+}
+
+.footer__logo-copy {
+  font-family: "Open Sans", sans-serif;
+  font-size: 9px;
+  color: #A5A5A5;
+}
+
+.footer__social-media {
+  position: relative;
+  top: 1px;
+  margin-right: 25px;
+}
+
 .open {
   overflow: hidden;
 }
@@ -1245,115 +1202,98 @@
   margin-bottom: 66px;
 }
 
-.header {
+.header__container {
   width: 100vw;
   height: 70px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+  background-color: #FFFFFF;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-}
-.header .menu__btn {
-  display: none;
-  position: absolute;
-  top: -9999;
-  left: -9999;
-  opacity: 0;
-}
-.header .menu__toggle {
-  display: none;
-}
-.header .menu__toggle span {
-  width: 20px;
-  height: 2px;
-  display: block;
-  margin-bottom: 3px;
-  background-color: #08A6E4;
-  transition: 0.3s all ease-in-out;
-}
-.header .menu__toggle span:last-child {
-  margin-bottom: 0;
-}
-@media (max-width: 841px) {
-  .header .menu__toggle {
-    display: block;
-  }
-}
-
-.container {
-  width: 1352px;
-  margin: 0 auto;
-}
-@media (max-width: 841px) {
-  .container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-}
-
-.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  position: relative;
+  z-index: 2;
 }
-
-.logo__link {
+.header__container .logo__link {
   color: #08A6E4;
-  text-decoration: none;
   font-size: 32px;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  outline: 0;
+  margin-left: 25px;
 }
-
-.header_nav {
-  display: flex;
-}
-@media (max-width: 841px) {
-  .header_nav {
-    position: absolute;
-    left: 0;
-    top: 95px;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    padding-bottom: 20px;
-    display: none;
-  }
-  .header_nav .nav-element {
-    padding: 0;
-  }
-  .header_nav .nav__link {
-    display: block;
-    padding: 14px 20px;
-  }
-}
-
-.nav-element {
-  margin-left: 95px;
-  font-size: 11px;
-  color: #F7F7F7;
-}
-
-a:active, a:hover {
-  outline: none;
-}
-
-.nav__link {
+.header__container a {
   text-decoration: none;
-  color: #A5A5A5;
-  font-family: "Open Sans", sans-serif;
-  outline: none;
-  font-weight: 700;
-  border-bottom: 4px solid transparent;
-  padding: 28px 17px 24px;
+}
+.header__container .header__navigation {
+  display: none;
+}
+.header__container .menu__toggle {
+  display: flex;
+  flex-direction: column;
+  margin-right: 28px;
+  position: absolute;
+  right: 0;
+}
+.header__container .menu__toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 3px;
+  background-color: #08A6E4;
+}
+.header__container .menu__btn {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.header__container .menu__btn:checked ~ .header__navigation {
+  display: block;
+}
+.header__container .menu__btn:checked ~ .menu__toggle span {
+  position: absolute;
+  left: -25px;
+  top: -3px;
+}
+.header__container .menu__btn:checked ~ .menu__toggle span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.header__container .menu__btn:checked ~ .menu__toggle span:nth-child(2) {
+  display: none;
+}
+.header__container .menu__btn:checked ~ .menu__toggle span:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
-.nav__link:hover {
-  border-color: #08A6E4;
-  color: #000000;
+.header__navigation {
+  display: none;
+  list-style: none;
+  width: 100vw;
+  height: 176px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #FFFFFF;
+  z-index: 1;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.16) inset;
+}
+
+.header_list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+}
+.header_list .nav-element {
+  margin-bottom: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.header_list .nav-element a {
+  color: #A5A5A5;
+  text-decoration: none;
+}
+.header_list .nav-element a:hover, .header_list .nav-element a:checked {
+  color: black;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
