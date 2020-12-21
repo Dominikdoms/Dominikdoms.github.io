@@ -336,323 +336,188 @@
   }
 }
 
-@media (max-width: 841px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 323px;
-    margin: 0 auto;
-  }
-
-  .contact__column-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 47px;
-    margin-bottom: 22px;
-    color: #000000;
-  }
-
-  .contact__instruction {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    margin-bottom: 42px;
-  }
-
-  .contact__details {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 56px;
-  }
-
-  .details__item-mail {
-    text-decoration: none;
-    color: #A5A5A5;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    position: relative;
-    left: 9px;
-    margin-bottom: 16px;
-  }
-
-  .details__item-tel {
-    text-decoration: none;
-    color: #A5A5A5;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    margin-left: 0;
-    position: relative;
-    left: 8px;
-  }
-
-  .details__item-mail::before {
-    content: "";
-    height: 27px;
-    width: 27px;
-    display: inline-block;
-    background-image: url("../../assets/Mail Icon.svg");
-    position: relative;
-    left: -10px;
-    bottom: -9px;
-  }
-
-  .details__item-tel::before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background-image: url("../../assets/Phone Icon.svg");
-    position: relative;
-    left: -10px;
-    bottom: -8px;
-  }
-
-  .form {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 157px;
-  }
-
-  .name {
-    margin-bottom: 45px;
-  }
-
-  .form__field {
-    height: 57px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #000000;
-  }
-
-  .form__label {
-    margin-bottom: 10px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 11px;
-    color: #08A6E4;
-    font-weight: 700;
-  }
-
-  /*-------*/
-  .form__input {
-    line-height: 23px;
-    border: 0;
-    margin-bottom: 9px;
-  }
-
-  .checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-  }
-
-  .checkbox {
-    cursor: pointer;
-    display: flex;
-    margin-top: 31px;
-  }
-
-  .form__checkbox-icon {
-    height: 24px;
-    width: 24px;
-    flex-shrink: 0;
-    flex-basis: 24px;
-    border: 1px solid #A5A5A5;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-
-  .form__checkbox-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    line-height: 17px;
-    color: #A5A5A5;
-    width: 277px;
-    height: 156px;
-  }
-
-  .checkbox input:checked + span {
-    background-image: url("../../assets/Checkmark.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .contact__btn {
-    font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    color: #FFFFFF;
-    background-color: #08A6E4;
-    padding: 20px 98px;
-    position: relative;
-    right: -89px;
-    bottom: -21px;
-    border: 0;
-    border-radius: 35px;
-    margin-bottom: 66px;
-  }
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 1354px) {
   .contact {
-    margin: 155px auto 59px auto;
-    height: 376px;
-    width: 896px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-  }
-
-  .contact__column {
-    width: 50%;
-  }
-
-  .contact__column-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 49px;
-    font-weight: 400;
-    margin-bottom: 22px;
-    color: var(--color-black);
-  }
-
-  .contact__instruction {
-    font-family: var(--font-spen-sans);
-    font-size: 16px;
-    font-weight: #000000;
-    margin-bottom: 42px;
-  }
-
-  .details__item-mail {
-    text-decoration: none;
-    color: #A5A5A5;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    position: relative;
-    left: 9px;
-  }
-
-  .details__item-tel {
-    text-decoration: none;
-    color: #A5A5A5;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    margin-left: calc(57px - 27px);
-    position: relative;
-    left: 8px;
-  }
-
-  .details__item-mail::before {
-    content: "";
-    height: 27px;
-    width: 27px;
-    display: inline-block;
-    background-image: url("../../assets/Mail Icon.svg");
-    position: relative;
-    left: -10px;
-    bottom: -9px;
-  }
-
-  .details__item-tel::before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background-image: url("../../assets/Phone Icon.svg");
-    position: relative;
-    left: -10px;
-    bottom: -8px;
-  }
-
-  /*-----------FORM-----------*/
-  .form {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 157px;
-  }
-
-  .name {
-    margin-bottom: 45px;
-  }
-
-  .form__field {
-    height: 57px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #000000;
-  }
-
-  .form__label {
-    margin-bottom: 10px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 11px;
-    color: #08A6E4;
-    font-weight: 700;
-  }
-
-  /*-------*/
-  .form__input {
-    line-height: 23px;
-    border: 0;
-    margin-bottom: 9px;
-  }
-
-  .checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-  }
-
-  .checkbox {
-    cursor: pointer;
-    display: flex;
-    margin-top: 34px;
-  }
-
-  .form__checkbox-icon {
-    height: 24px;
-    width: 24px;
-    flex-shrink: 0;
-    flex-basis: 24px;
-    border: 1px solid #A5A5A5;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-
-  .form__checkbox-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    line-height: 17px;
-    color: #A5A5A5;
-  }
-
-  .checkbox input:checked + span {
-    background-image: url("../../assets/Checkmark.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .contact__btn {
-    font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    color: #FFFFFF;
-    background-color: #08A6E4;
-    padding: 20px 97px;
-    position: relative;
-    right: -223px;
-    bottom: -20px;
-    border: 0;
-    border-radius: 35px;
+    padding: 155px 0px 55px 0;
   }
 }
+
+@media (min-width: 1354px) {
+  .contact__column {
+    padding: 0 57px;
+  }
+}
+.contact__column-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 47px;
+  margin-bottom: 22px;
+  color: #000000;
+}
+
+.contact__instruction {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-bottom: 42px;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+@media (min-width: 1354px) {
+  .contact__details {
+    flex-direction: row;
+    margin-bottom: 297px;
+  }
+}
+
+.details__item-mail {
+  text-decoration: none;
+  color: #A5A5A5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  position: relative;
+  left: 9px;
+  margin-bottom: 16px;
+}
+
+.details__item-tel {
+  text-decoration: none;
+  color: #A5A5A5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-left: 0;
+  position: relative;
+  left: 8px;
+}
+@media (min-width: 1354px) {
+  .details__item-tel {
+    margin-left: 22px;
+  }
+}
+
+.details__item-mail::before {
+  content: "";
+  height: 27px;
+  width: 27px;
+  display: inline-block;
+  background-image: url("../../assets/Mail Icon.svg");
+  position: relative;
+  left: -10px;
+  bottom: -9px;
+}
+
+.details__item-tel::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../../assets/Phone Icon.svg");
+  position: relative;
+  left: -10px;
+  bottom: -8px;
+}
+
+.form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 157px;
+}
+
+.name {
+  margin-bottom: 45px;
+}
+
+.form__field {
+  height: 57px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #000000;
+}
+
+.form__label {
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: #08A6E4;
+  font-weight: 700;
+}
+
+/*-------*/
+.form__input {
+  line-height: 23px;
+  border: 0;
+  margin-bottom: 9px;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  margin-top: 31px;
+}
+
+.form__checkbox-icon {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  border: 1px solid #A5A5A5;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form__checkbox-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  color: #A5A5A5;
+  width: 277px;
+  height: 156px;
+}
+
+.checkbox input:checked + span {
+  background-image: url("../../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact__btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+  background-color: #08A6E4;
+  padding: 20px 98px;
+  position: relative;
+  right: -89px;
+  bottom: -21px;
+  border: 0;
+  border-radius: 35px;
+  margin-bottom: 66px;
+}
+
 @media (max-width: 841px) {
   .footer {
     width: 100vw;
@@ -1198,323 +1063,188 @@
   top: -7px;
 }
 
-@media (max-width: 841px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 323px;
-    margin: 0 auto;
-  }
-
-  .contact__column-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 47px;
-    margin-bottom: 22px;
-    color: #000000;
-  }
-
-  .contact__instruction {
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    margin-bottom: 42px;
-  }
-
-  .contact__details {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 56px;
-  }
-
-  .details__item-mail {
-    text-decoration: none;
-    color: #A5A5A5;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    position: relative;
-    left: 9px;
-    margin-bottom: 16px;
-  }
-
-  .details__item-tel {
-    text-decoration: none;
-    color: #A5A5A5;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    margin-left: 0;
-    position: relative;
-    left: 8px;
-  }
-
-  .details__item-mail::before {
-    content: "";
-    height: 27px;
-    width: 27px;
-    display: inline-block;
-    background-image: url("../../assets/Mail Icon.svg");
-    position: relative;
-    left: -10px;
-    bottom: -9px;
-  }
-
-  .details__item-tel::before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background-image: url("../../assets/Phone Icon.svg");
-    position: relative;
-    left: -10px;
-    bottom: -8px;
-  }
-
-  .form {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 157px;
-  }
-
-  .name {
-    margin-bottom: 45px;
-  }
-
-  .form__field {
-    height: 57px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #000000;
-  }
-
-  .form__label {
-    margin-bottom: 10px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 11px;
-    color: #08A6E4;
-    font-weight: 700;
-  }
-
-  /*-------*/
-  .form__input {
-    line-height: 23px;
-    border: 0;
-    margin-bottom: 9px;
-  }
-
-  .checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-  }
-
-  .checkbox {
-    cursor: pointer;
-    display: flex;
-    margin-top: 31px;
-  }
-
-  .form__checkbox-icon {
-    height: 24px;
-    width: 24px;
-    flex-shrink: 0;
-    flex-basis: 24px;
-    border: 1px solid #A5A5A5;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-
-  .form__checkbox-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    line-height: 17px;
-    color: #A5A5A5;
-    width: 277px;
-    height: 156px;
-  }
-
-  .checkbox input:checked + span {
-    background-image: url("../../assets/Checkmark.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .contact__btn {
-    font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    color: #FFFFFF;
-    background-color: #08A6E4;
-    padding: 20px 98px;
-    position: relative;
-    right: -89px;
-    bottom: -21px;
-    border: 0;
-    border-radius: 35px;
-    margin-bottom: 66px;
-  }
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 1354px) {
   .contact {
-    margin: 155px auto 59px auto;
-    height: 376px;
-    width: 896px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-  }
-
-  .contact__column {
-    width: 50%;
-  }
-
-  .contact__column-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 49px;
-    font-weight: 400;
-    margin-bottom: 22px;
-    color: var(--color-black);
-  }
-
-  .contact__instruction {
-    font-family: var(--font-spen-sans);
-    font-size: 16px;
-    font-weight: #000000;
-    margin-bottom: 42px;
-  }
-
-  .details__item-mail {
-    text-decoration: none;
-    color: #A5A5A5;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    position: relative;
-    left: 9px;
-  }
-
-  .details__item-tel {
-    text-decoration: none;
-    color: #A5A5A5;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    margin-left: calc(57px - 27px);
-    position: relative;
-    left: 8px;
-  }
-
-  .details__item-mail::before {
-    content: "";
-    height: 27px;
-    width: 27px;
-    display: inline-block;
-    background-image: url("../../assets/Mail Icon.svg");
-    position: relative;
-    left: -10px;
-    bottom: -9px;
-  }
-
-  .details__item-tel::before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background-image: url("../../assets/Phone Icon.svg");
-    position: relative;
-    left: -10px;
-    bottom: -8px;
-  }
-
-  /*-----------FORM-----------*/
-  .form {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 157px;
-  }
-
-  .name {
-    margin-bottom: 45px;
-  }
-
-  .form__field {
-    height: 57px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #000000;
-  }
-
-  .form__label {
-    margin-bottom: 10px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 11px;
-    color: #08A6E4;
-    font-weight: 700;
-  }
-
-  /*-------*/
-  .form__input {
-    line-height: 23px;
-    border: 0;
-    margin-bottom: 9px;
-  }
-
-  .checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: 0;
-    height: 0;
-  }
-
-  .checkbox {
-    cursor: pointer;
-    display: flex;
-    margin-top: 34px;
-  }
-
-  .form__checkbox-icon {
-    height: 24px;
-    width: 24px;
-    flex-shrink: 0;
-    flex-basis: 24px;
-    border: 1px solid #A5A5A5;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-
-  .form__checkbox-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    line-height: 17px;
-    color: #A5A5A5;
-  }
-
-  .checkbox input:checked + span {
-    background-image: url("../../assets/Checkmark.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .contact__btn {
-    font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    color: #FFFFFF;
-    background-color: #08A6E4;
-    padding: 20px 97px;
-    position: relative;
-    right: -223px;
-    bottom: -20px;
-    border: 0;
-    border-radius: 35px;
+    padding: 155px 0px 55px 0;
   }
 }
+
+@media (min-width: 1354px) {
+  .contact__column {
+    padding: 0 57px;
+  }
+}
+.contact__column-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 47px;
+  margin-bottom: 22px;
+  color: #000000;
+}
+
+.contact__instruction {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-bottom: 42px;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+@media (min-width: 1354px) {
+  .contact__details {
+    flex-direction: row;
+    margin-bottom: 297px;
+  }
+}
+
+.details__item-mail {
+  text-decoration: none;
+  color: #A5A5A5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  position: relative;
+  left: 9px;
+  margin-bottom: 16px;
+}
+
+.details__item-tel {
+  text-decoration: none;
+  color: #A5A5A5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-left: 0;
+  position: relative;
+  left: 8px;
+}
+@media (min-width: 1354px) {
+  .details__item-tel {
+    margin-left: 22px;
+  }
+}
+
+.details__item-mail::before {
+  content: "";
+  height: 27px;
+  width: 27px;
+  display: inline-block;
+  background-image: url("../../assets/Mail Icon.svg");
+  position: relative;
+  left: -10px;
+  bottom: -9px;
+}
+
+.details__item-tel::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../../assets/Phone Icon.svg");
+  position: relative;
+  left: -10px;
+  bottom: -8px;
+}
+
+.form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 157px;
+}
+
+.name {
+  margin-bottom: 45px;
+}
+
+.form__field {
+  height: 57px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #000000;
+}
+
+.form__label {
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: #08A6E4;
+  font-weight: 700;
+}
+
+/*-------*/
+.form__input {
+  line-height: 23px;
+  border: 0;
+  margin-bottom: 9px;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  margin-top: 31px;
+}
+
+.form__checkbox-icon {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  border: 1px solid #A5A5A5;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form__checkbox-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  color: #A5A5A5;
+  width: 277px;
+  height: 156px;
+}
+
+.checkbox input:checked + span {
+  background-image: url("../../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact__btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #FFFFFF;
+  background-color: #08A6E4;
+  padding: 20px 98px;
+  position: relative;
+  right: -89px;
+  bottom: -21px;
+  border: 0;
+  border-radius: 35px;
+  margin-bottom: 66px;
+}
+
 .header {
   width: 100vw;
   height: 70px;
