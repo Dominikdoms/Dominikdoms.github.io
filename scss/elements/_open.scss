@@ -1,3 +1,4 @@
+
 .open {
   overflow: hidden;
 }
@@ -6,48 +7,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 130px;
-  @include mobile {
-    margin-top: 100px;
-  }
+
+  margin-top: 100px;
 }
 
 .open__header {
   font-family: 'Raleway';
   font-size: 49px;
   margin-bottom: 20px;
-
 }
 
 .open__text {
   font-family: $font-open-sans;
   margin-bottom: 38px;
-  @include mobile {
-    padding: 0 70px;
-    text-align: center;
-  }
+  padding: 0 70px;
+  text-align: center;
+
 }
 
 .open__btn {
   border-radius: 30px;
   background-color: $color-primary;
-  padding: 22px 157px;
   text-decoration: none;
   font-family: $font-open-sans;
   color: $color-white;
   box-shadow: 0 0 22px 10px rgba(8, 166, 228, 0.16);
-
-  @include mobile {
-    margin: 0 15px;
-    padding: 26px 95px;
-  }
+  margin: 0 15px;
+  padding: 26px 95px;
 }
 
 .background-img {
-  width: 100%;
   height: auto;
-  @include mobile {
-    width: 220%;
-    transform: translateX(-28%);
+  width: 220%;
+  transform: translateX(-28%);
+  @include desktop {
+    transform: unset;
+    width: 100%;
   }
 }
