@@ -1,4 +1,6 @@
 # Dominikdoms.github.io
-Drugi warsztat 
-
+Mój warsztat:
+HTML/SCC,
+SCSS/RWD,
+JavaScript.
 'https://dominikdoms.github.io/'
