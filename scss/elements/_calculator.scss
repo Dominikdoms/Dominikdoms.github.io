@@ -13,6 +13,7 @@
   }
 
   &__columns {
+    width: 100%;
     max-width: 865px;
     margin: 50px auto 0;
     display: flex;
@@ -68,7 +69,8 @@
       &::after {
         content: "";
         background-image: url("../../assets/Arrow.svg");
-        width: 22px;
+        width: 100%;
+        max-width: 22px;
         height: 22px;
         display: block;
         position: absolute;
@@ -117,7 +119,8 @@
   .form__checkbox {
     [type="checkbox"]{//dodane
       height: 24px;
-      width: 24px;
+      width: 100%;
+      max-width: 24px;
       flex-shrink: 0;
       flex-basis: 24px;
       border: 1px solid $color-grey;
@@ -131,6 +134,8 @@
       background-position: center;
     }
     .consent__text {
+      width: 100%;
+      max-width: 94px;
       padding-top: 4px;
       position: relative;
       top: -26px;

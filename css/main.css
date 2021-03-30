@@ -6,7 +6,7 @@
 .benefits {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   background-color: #F7F7F7;
   padding: 1px 0;
 }
@@ -17,6 +17,7 @@
 }
 
 .benefits__content {
+  width: 100%;
   padding: 42px 54px;
   box-sizing: border-box;
 }
@@ -104,6 +105,7 @@
 }
 
 .benefits__first-macbook-img {
+  width: 100%;
   height: 109px;
   margin-top: 37px;
 }
@@ -211,7 +213,8 @@
 }
 
 .benefits__second-iphone-img {
-  width: 175px;
+  width: 100%;
+  max-width: 175px;
   height: 134.99px;
   margin-top: 37px;
   margin-left: 38px;
@@ -325,7 +328,8 @@
   margin: -13px auto;
   position: relative;
   z-index: 1;
-  width: 295px;
+  width: 100%;
+  max-width: 295px;
   height: 207px;
   left: calc(50% - 147.5px);
   bottom: calc(50% - 131px);
@@ -357,8 +361,9 @@
   }
 }
 .contact__column-title {
+  width: 100%;
   font-family: "Raleway", sans-serif;
-  font-size: 44px;
+  font-size: 42px;
   font-weight: 400;
   line-height: 47px;
   margin-bottom: 22px;
@@ -391,6 +396,8 @@
   position: relative;
   left: 9px;
   margin-bottom: 16px;
+  width: 100%;
+  max-width: 187px;
 }
 
 .details__item-tel {
@@ -401,6 +408,8 @@
   margin-left: 0;
   position: relative;
   left: 8px;
+  width: 100%;
+  max-width: 139px;
 }
 @media (min-width: 1354px) {
   .details__item-tel {
@@ -495,7 +504,8 @@
   font-size: 12px;
   line-height: 17px;
   color: #A5A5A5;
-  width: 277px;
+  width: 100%;
+  max-width: 277px;
   height: 156px;
 }
 
@@ -512,15 +522,20 @@
   background-color: #08A6E4;
   padding: 20px 98px;
   position: relative;
-  right: -89px;
+  right: -23px;
   bottom: -21px;
   border: 0;
   border-radius: 35px;
   margin-bottom: 66px;
 }
+@media (min-width: 1354px) {
+  .contact__btn {
+    right: -89px;
+  }
+}
 
 .footer {
-  width: 100vw;
+  width: 100%;
   height: 89px;
   background-color: #F7F7F7;
   box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
@@ -661,7 +676,8 @@
 }
 
 .pricing__box {
-  width: 293px;
+  width: 99%;
+  max-width: 293px;
   height: 251px;
   border: 1px solid #FB3B64;
   border-radius: 18px;
@@ -771,7 +787,8 @@
 }
 
 .pricing__box-professional {
-  width: 339px;
+  width: 98%;
+  max-width: 339px;
   height: 277px;
   border: 1px solid #08A6E4;
   box-shadow: 0 0 46px -23px #08A6E4;
@@ -1024,6 +1041,7 @@
   font-size: 36px;
 }
 .calc__columns {
+  width: 100%;
   max-width: 865px;
   margin: 50px auto 0;
   display: flex;
@@ -1073,7 +1091,8 @@
 .calc__select .select__input::after {
   content: "";
   background-image: url("../../assets/Arrow.svg");
-  width: 22px;
+  width: 100%;
+  max-width: 22px;
   height: 22px;
   display: block;
   position: absolute;
@@ -1108,7 +1127,8 @@
 }
 .calc .form__checkbox [type=checkbox] {
   height: 24px;
-  width: 24px;
+  width: 100%;
+  max-width: 24px;
   flex-shrink: 0;
   flex-basis: 24px;
   border: 1px solid #A5A5A5;
@@ -1122,6 +1142,8 @@
   background-position: center;
 }
 .calc .form__checkbox .consent__text {
+  width: 100%;
+  max-width: 94px;
   padding-top: 4px;
   position: relative;
   top: -26px;
@@ -1197,8 +1219,9 @@
   }
 }
 .contact__column-title {
+  width: 100%;
   font-family: "Raleway", sans-serif;
-  font-size: 44px;
+  font-size: 42px;
   font-weight: 400;
   line-height: 47px;
   margin-bottom: 22px;
@@ -1231,6 +1254,8 @@
   position: relative;
   left: 9px;
   margin-bottom: 16px;
+  width: 100%;
+  max-width: 187px;
 }
 
 .details__item-tel {
@@ -1241,6 +1266,8 @@
   margin-left: 0;
   position: relative;
   left: 8px;
+  width: 100%;
+  max-width: 139px;
 }
 @media (min-width: 1354px) {
   .details__item-tel {
@@ -1335,7 +1362,8 @@
   font-size: 12px;
   line-height: 17px;
   color: #A5A5A5;
-  width: 277px;
+  width: 100%;
+  max-width: 277px;
   height: 156px;
 }
 
@@ -1352,15 +1380,20 @@
   background-color: #08A6E4;
   padding: 20px 98px;
   position: relative;
-  right: -89px;
+  right: -23px;
   bottom: -21px;
   border: 0;
   border-radius: 35px;
   margin-bottom: 66px;
 }
+@media (min-width: 1354px) {
+  .contact__btn {
+    right: -89px;
+  }
+}
 
 .header__container {
-  width: 100vw;
+  width: 100%;
   height: 70px;
   background-color: #FFFFFF;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
