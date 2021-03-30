@@ -14,6 +14,7 @@
 
 .benefits__content {
   width: 100%;
+  height: 100%;
   padding: 42px 54px;
   box-sizing: border-box;
   @include desktop {
@@ -90,7 +91,6 @@
 }
 
 .benefits__first-macbook-img {
-  width: 100%;
   height: 109px;
   margin-top: 37px;
   @include desktop {
@@ -194,8 +194,8 @@
 }
 
 .benefits__second-iphone-img {
-  width: 100%;
-  max-width: 175px;
+  //width: 100%;
+  width: 175px;
   height: 134.99px;
   margin-top: 37px;
   margin-left: 38px;

@@ -18,9 +18,8 @@
   }
 
   .contact__column-title {
-    width: 100%;
     font-family: $font-realway;
-    font-size: 42px;
+    font-size: 44px;
     font-weight: $font-size-normal;
     line-height: 47px;
     margin-bottom: 22px;
@@ -50,8 +49,6 @@
     position: relative;
     left: 9px;
     margin-bottom: 16px;
-    width: 100%;
-    max-width: 187px;
   }
 
   .details__item-tel {
@@ -62,8 +59,6 @@
     margin-left: 0;
     position: relative;
     left: 8px;
-    width: 100%;
-    max-width: 139px;
     @include desktop {
       margin-left: 22px;
     }
@@ -156,8 +151,7 @@
     font-size: 12px;
     line-height: 17px;
     color: $color-grey;
-    width: 100%;
-    max-width: 277px;
+    width: 277px;
     height: 156px;
   }
 
@@ -174,12 +168,12 @@
     background-color: $color-primary;
     padding: 20px 98px;
     position: relative;
-    right: -23px;
+    right: -89px;
     bottom: -21px;
     border: 0;
     border-radius: 35px;
     margin-bottom: 66px;
-    @include desktop {
-      right: -89px;
+    @media (max-width: 354px){
+      right: -23px;
     }
   }

@@ -49,7 +49,8 @@
   margin: 0 auto 53px auto;// ################################
   position: relative;
   @include desktop {
-    width: 372px;
+    width: 100%;
+    max-width: 372px;
     height: 461px;
     display: flex;
     flex-direction: column;
@@ -155,7 +156,8 @@
   align-items: center;
   position: relative;
   @include desktop {
-    width: 405px;
+    width: 100%;
+    max-width: 405px;
     height: 500px;
     position: relative;
     top: -16px;
