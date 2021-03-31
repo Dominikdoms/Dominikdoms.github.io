@@ -17,6 +17,7 @@ Click on the link: https://dominikdoms.github.io/
 
 <ul>
   <li>SASS</li>
+  <li>RWD</li>
   <li>HTML</li>
   <li>JavaScript (ES6)</li>
   <li>BEM Methodology</li>
