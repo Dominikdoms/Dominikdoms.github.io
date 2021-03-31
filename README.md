@@ -1,7 +1,7 @@
 
 
 # Welcome to BestShop CodersLab workshop
-
+> **Description**: First workshop realised during Coders Lab bootcamp. Simple landing page based on layout created in Adobe XD.
 
 ## 🐶 Availability
 
@@ -12,9 +12,6 @@ Click on the link: https://dominikdoms.github.io/
 ### Pricing and calculator 
 ![demo screenshot](./assets/readMe/pricing)
 
-
-<h2>👌Description</h2>
-First workshop realised during Coders Lab bootcamp. Simple landing page based on layout created in Adobe XD. 
 
 <h2>📓 Technologies</h2>
 
