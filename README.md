@@ -6,7 +6,8 @@
 ## 🐶 Availability
 
 Click on the link: https://dominikdoms.github.io/
-###🌱 Open section
+
+### 🌱 Open section
 ![demo screenshot](./assets/readMe/welcome)
 
 ### 💰 Pricing and calculator 
