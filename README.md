@@ -25,7 +25,7 @@ Click on the link: https://dominikdoms.github.io/
 </ul>
 
 ## ⬇ How to install:
-1. ``` https://github.com/Dominikdoms/Dominikdoms.github.io.git ```
+1. ``` git clone https://github.com/Dominikdoms/Dominikdoms.github.io.git ```
 2. ``` cd Dominikdoms.github.io ```
 3. ``` npm i ```
 4. ``` npm start ```
