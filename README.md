@@ -21,7 +21,6 @@ Click on the link: https://dominikdoms.github.io/
   <li>RWD</li>
   <li>HTML</li>
   <li>JavaScript (ES6)</li>
-  <li>BEM Methodology</li>
   <li>Gulp</li>
 </ul>
 
